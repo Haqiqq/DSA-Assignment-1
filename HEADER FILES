@@ -1,0 +1,96 @@
+// INCLUDES HEADER FILES FOR ALL THREE TASKS, UNCOMMENT SPECIFIC ONES TO RUN.
+
+//TASK 1: POLYNOMIAL.
+
+#ifndef POLYNOMIAL_H
+#define POLYNOMIAL_H
+
+#include <string>
+
+class Polynomial {
+public:
+    Polynomial();
+
+    ~Polynomial();
+
+    // Insert a term into the polynomial
+    void insertTerm(int coefficient, int exponent);
+
+    // Return polynomial as a human-readable string
+    std::string toString() const;
+
+    // Return a new polynomial that is the sum of this and other
+    Polynomial add(const Polynomial& other) const;
+
+    // Return a new polynomial that is the product of this and other
+    Polynomial multiply(const Polynomial& other) const;
+
+    // Return a new polynomial that is the derivative of this polynomial
+    Polynomial derivative() const;
+};
+
+#endif
+
+//TASK 2: TEXT EDITOR.
+
+#ifndef TEXTEDITOR_H
+#define TEXTEDITOR_H
+
+#include <string>
+
+class TextEditor {
+public:
+    // Insert character at cursor
+    void insertChar(char c);
+
+    // Delete character before cursor
+    void deleteChar();
+
+    // Move cursor one position left
+    void moveLeft();
+
+    // Move cursor one position right
+    void moveRight();
+
+    // Return string with cursor position
+    std::string getTextWithCursor() const;
+
+    ~TextEditor();
+};
+
+#endif
+
+//TASK 3: UNO.
+#ifndef UNO_H
+#define UNO_H
+
+#include <string>
+#include <vector>
+
+struct Card {
+
+};
+
+class UNOGame {
+public:
+    // Initialize game with given number of players
+    UNOGame(int numPlayers);
+
+    // Shuffle and deal cards to players
+    void initialize();
+
+    // Play one turn of the game
+    void playTurn();
+
+    // Return true if game has a winner
+    bool isGameOver() const;
+
+    // Return index of winner
+    int getWinner() const;
+
+    // Return current state as string
+    std::string getState() const;
+};
+
+#endif
+
