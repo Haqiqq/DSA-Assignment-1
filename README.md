@@ -1,5 +1,6 @@
 # DSA-Assignment-1
-GITHUB LINK: 
+GITHUB LINK: https://github.com/Haqiqq/DSA-Assignment-1
+
 ( This repositry contains my assignment of DSA. The three cpp files are attached in zip file for submission to portal. The 'main' is only on github and this readme includes challenges i faced doing this assignment and the design of cpp files.)
 
 The header files were already given, and we implemented the cpp files to work the solution of the problems. There were three problems in the assignment to be solved using ADT concepts. 
